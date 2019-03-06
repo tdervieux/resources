@@ -101,6 +101,14 @@ git push forked otioviewerFeature
 > gitk --all
 ```
 
+### diff with my favourite tooks
+```csh
+git config --global diff.external ~/git-diff-wrapper.sh
+```
+Then add the following in ~/git-diff-wrapper.sd
+```csh
+/bin/xxdiff $2 $5
+```
 
 # Python
 ## Create a virtual environment
