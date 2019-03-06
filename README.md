@@ -1,7 +1,33 @@
 # Markdown Syntax
+
 [Check this link for complete markdown syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 # Git 
+
+### clone a repo
+```csh
+git clone url
+```
+
+### push branch to repo (origin)
+```csh
+git push origin mybranch
+```
+
+### add a change or a new file
+```csh
+git add myfile.py
+```
+
+### commit
+```csh
+git commit -m "i changed this and this and this"
+```
+
+### add a change from a file already tracked and commit
+```csh
+git commit -am `I changed this and this on this file already added`
+```
 
 ### check the remote repo
 ```bash
@@ -10,6 +36,7 @@ origin
 upstream
 > git remote show // seems to be the same as git remove
 ```
+
 ### check the url of a specific repo
 ```csh
 > git remote show origin
@@ -24,25 +51,28 @@ upstream
   Local ref configured for 'git push':
     master pushes to master (up to date)
 ```
-###create a ssh key
+
+### create a ssh key
 ```
 xclip -sel clip < ~/.ssh/id_dsa.pub
 ```
+
 ### add upstream repo
 ```csh
 git remote add upstream git@github.com:PixarAnimationStudios/OpenTimelineIO.git
 ```
 
 ### merge with upstream/master
+```
 > git merge upstream/master
-
+```
 
 ### visualize commit graph in the shell
 ```csh
 > git log --oneline --graph --all
 ```
 
-###update my repo from upstream
+### update my repo from upstream
 ```csh
 > git fetch upstream
 ```
@@ -55,7 +85,6 @@ git remote add upstream git@github.com:PixarAnimationStudios/OpenTimelineIO.git
 or
 git remote add upstream https://github.com/PixarAnimationStudios/OpenTimelineIO.git
 ```
-
 
 ### rebase
 ```csh
@@ -71,7 +100,7 @@ git push forked otioviewerFeature
 ```csh
 > gitk --all
 ```
-# houdini
+
 
 # Python
 ## Create a virtual environment
