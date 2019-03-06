@@ -1,4 +1,8 @@
-# resources
-Resources et liens utils
+# Markdown Syntax
+[Check this link for complete markdown syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
-Humm donc on peut editer ce fichier directement. C'est bien pratique.
+# Git 
+
+# houdini
+
+# Python
