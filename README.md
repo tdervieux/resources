@@ -110,6 +110,17 @@ Then add the following in ~/git-diff-wrapper.sd
 /bin/xxdiff $2 $5
 ```
 
+### rebase example
+```chs
+git fetch upstream
+git checkout Ruler
+git rebase -i upstream/master
+# in the editor that pops out, you want to delete the line with teh commit from the other branch -- should be the first one, with the commit message "add frame all function"
+after its done rebasing, then you :
+git push origin Ruler --force
+# you need to --force because you rebased.
+```
+
 # Python
 ## Create a virtual environment
 
