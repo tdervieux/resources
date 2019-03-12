@@ -50,3 +50,35 @@
    motsdepasse.txt
    config/application.yml
    Le fichier .gitignore doit être tracké comme vos autres fichiers dans Git : vous devez donc l'ajouter à l'index et le committer. 
+
+
+
+
+# Évitez des commits superflus
+
+
+[link to the video](https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github/2433726-evitez-des-commits-superflus)
+
+ Pour télécharger les vidéos de ce cours, devenez Premium
+ Imaginez le scénario suivant : vous êtes en train de travailler sur une fonction, lorsque tout à coup une urgence survient et un collègue vous demande de résoudre un bug dans un autre fichier et/ou une autre branche. 
+
+ Si vous faites un commit des modifications sur votre fonction à ce stade, cela va alourdir votre historique car vous n'avez pas terminé votre tâche.
+
+ Comment faire pour ne pas perdre vos modifications en cours avant de passer à l'urgence à traiter ?
+
+ Et bien vous pouvez mettre de côté vos modifications en cours avec la commande :
+```
+ git stash
+```
+ Vous pouvez alors vous rendre dans la branche/le fichier que vous devez traiter à l'instant, finir et committer vos modifs. Une fois que vous avez réglé cette urgence, revenez sur la branche sur laquelle vous étiez en train de travailler, et récupérez les modifications que vous aviez mises de côté avec la commande : 
+```
+ git stash pop
+```
+  
+
+  Attention, pop vide votre stash des modifications que vous aviez rangées dedans. Donc une fois que vous avez récupéré ces modifications dans votre branche, il vous faut finir votre tâche et les committer ! (ou bien les remettre de côté en exécutant à nouveau la commande git stash).
+
+  Si vous voulez garder les modifications dans votre stash, vous pouvez utiliser apply à la place de pop : 
+```
+  git stash apply
+```
