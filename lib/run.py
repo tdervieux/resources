@@ -1,3 +1,10 @@
+def addition_abcd(a,b,c,d):
+	return a+b+c+d
+
+def addition_abc(a,b,c):
+	return a+b+c
+
+
 def sub(a,b):
 	return a-b
 	
