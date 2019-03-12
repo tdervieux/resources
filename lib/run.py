@@ -1,3 +1,9 @@
+
+
+
+def log(m):
+	print "this is a message %s"%m
+
 def sub(a,b):
 	return a-b
 	
