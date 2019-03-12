@@ -1,6 +1,5 @@
-
-
-
+def mult (a,b):
+	return a*x
 
 def add (a,b):
 	return a+b
