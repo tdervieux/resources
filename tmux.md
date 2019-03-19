@@ -59,3 +59,4 @@ With named sessions in place, now when we do tmux ls we see the session name ins
 
 or for five spaces
 ```ctrl+b :resize-pane -[U|D|L|R] 5```
+
