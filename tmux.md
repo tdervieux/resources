@@ -52,11 +52,23 @@ With named sessions in place, now when we do tmux ls we see the session name ins
 ```ctrl+b %```
 
 #### Switch Pane
-```ctrl+b <release key> [arrow key]```
+```ctrl+b```
+```[arrow key]```
 
 #### Resize Pan
 ```ctrl+b [arrow key]```
 
 or for five spaces
-```ctrl+b :resize-pane -[U|D|L|R] 5```
+```ctrl+b :```
+```resize-pane -[U|D|L|R] 5```
 
+#### Scrolling in a Pan
+
+```ctrl+b```
+```page up```
+then use arrow key and page up|down
+```q``` to quit scroll mode
+
+#### Scrolling in a Pan with the Mouse
+```ctrl+b``` + ```:```
+```setw -g mouse on```
