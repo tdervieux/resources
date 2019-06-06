@@ -1,3 +1,11 @@
+# Blogs
+
+## vex snippet, crowd, python and workflow
+
+http://www.tokeru.com/cgwiki/index.php?title=HoudiniGettingStarted
+
+http://lex.ikoon.cz/
+
 # Vex
 
 http://www.tokeru.com/cgwiki/index.php?title=HoudiniGettingStarted
