@@ -58,3 +58,17 @@ for point in geo.points():
     if hou.updateProgressAndCheckForInterrupt():
         break
 ```        
+### example using numpy
+
+https://www.sidefx.com/docs/hdk/_h_d_k__s_o_p__h_o_m__c_p_p__v_e_x.html
+
+   41 import numpy
+   42 
+   43 geo = hou.pwd().geometry()
+   44 positions = numpy.frombuffer(
+   45     geo.pointFloatAttribValuesAsString("P"), dtype="f4,f4,f4").copy()
+   46 positions.dtype.names = ("x", "y", "z")
+   47 
+   48 positions["y"] = numpy.sin(
+   49     positions["x"] * 0.2 + positions["z"] * 0.3 + hou.frame() * 0.03)
+   50 geo.setPointFloatAttribValuesFromString("P", positions)
