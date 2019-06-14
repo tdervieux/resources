@@ -6,6 +6,10 @@ http://www.tokeru.com/cgwiki/index.php?title=HoudiniGettingStarted
 
 http://lex.ikoon.cz/
 
+## hdk houdini 12 introduction
+
+http://www.deborahrfowler.com/C++Resources/HDK/HDK12_Intro.pdf
+
 # Vex
 
 http://www.tokeru.com/cgwiki/index.php?title=HoudiniGettingStarted
